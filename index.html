@@ -14,10 +14,14 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top data-aos="fade-zoom-in">
       <div class="container">
         <a class="navbar-brand" href="#">
             <img src="img/foto.png" alt="" width="30" height="30" class="rounded-circle >
@@ -28,11 +32,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#support">Support</a>
-            <a class="nav-link" href="#store">Store</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link active" aria-current="page" href="#home" data-aos="zoom-out-up">Home</a>
+            <a class="nav-link" href="#about" data-aos="fade-up" data-aos-duration="1500">About</a>
+            <a class="nav-link" href="#support" data-aos="fade-down" data-aos-duration="3000">Support</a>
+            <a class="nav-link" href="#store" data-aos="fade-up" data-aos-duration="1500">Store</a>
+            <a class="nav-link" href="#contact" data-aos="fade-down" data-aos-duration="3000">Contact</a>
           </div>
         </div>
       </div>
@@ -41,9 +45,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/foto.png" alt="Miftah GanzZ" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Miftah GanzZ</h1>
-      <p class="lead">I'm a student and I'm still learning coding</p>
+      <img src="img/foto.png" alt="Miftah GanzZ" width="200" class="rounded-circle img-thumbnail" data-aos="fade-in" />
+      <h1 class="display-4" data-aos="zoom-out-down">Miftah GanzZ</h1>
+      <p class="lead" data-aos="zoom-out">I'm a student and I'm still learning coding</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -56,7 +60,7 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <div class="row text-center mb3">
           <div class="col">
             <h2>About Me</h2>
@@ -78,12 +82,12 @@
     <section id="support">
 <div class="container">
     <div class="row text-center">
-        <div class="col mb-3">
+        <div class="col mb-3" data-aos="flip-down">
             <h2>Support Me</h2>
         </div>
     </div>
     <div class="row justify-content-evenly">
-<div class="col-sm-4 mb-3">
+<div class="col-sm-4 mb-3" data-aos="fade-right" data-aos-duration="1000">
     <div class="card text-center">
         <img src="img/saweria.png" class="Saweria" alt="support 1">
         <div class="card-body">
@@ -93,7 +97,7 @@
         </div>
       </div>
 </div>
-<div class="col-sm-4 mb-3">
+<div class="col-sm-4 mb-3" data-aos="fade-left" data-aos-duration="2000">
     <div class="card text-center">
         <img src="img/sociabuzz.png" class="Sociabuzz" alt="support 2">
         <div class="card-body">
@@ -112,12 +116,12 @@
     <!-- Store -->
     <section id="store">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
+            <div>
+                <div class="col text-center">
                     <h2>My Store</h2>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-                    <div class="col">
+                    <div class="col" data-aos="zoom-out-up">
                       <div class="card h-100">
                         <img src="img/jasa run.jpg" class="card-img-top" alt="ptoduct 1">
                         <div class="card-body">
@@ -130,7 +134,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="zoom-out-up">
                       <div class="card h-100">
                         <img src="img/sewa bot.jpg" class="card-img-top" alt="product 2">
                         <div class="card-body">
@@ -155,7 +159,7 @@
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="200">
             <div class="row text-center">
                 <div class="rol">
                     <h2>Contact Me</h2>
@@ -193,13 +197,18 @@
     <!-- Akhir Contact -->
 
     <!-- Fotter -->
-    <footer class="bg-primary text-white text-center pb-5">
+    <footer class="bg-primary text-white text-center pb-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <p>Created with by <a href="https://YouTube.com/c/MiftahAzzam" class="text-white fw-bold">Miftah GanzZ</a></p>
         <p>© 2019 miftahganzz.my.id. All Rights Reserved</p>
     </footer>
     <!-- Akhir fotter -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyVp9guOIAyse910ExMXM3GttzzWaegYBXUoPl5YFLRBEpCgfn5gYOxA21n_CrcVKLa8g/exec'
