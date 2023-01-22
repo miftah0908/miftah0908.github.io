@@ -1,17 +1,18 @@
 body {
   min-height: 2000px;
 }
+
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2edff;
+  background-color: white;
 }
 
 #support {
-  background-color: #e2edff;
+  background-color: white;
 }
 
 #contact {
-  background-color: #e2edff;
+  background-color: white;
 }
 
 section {
